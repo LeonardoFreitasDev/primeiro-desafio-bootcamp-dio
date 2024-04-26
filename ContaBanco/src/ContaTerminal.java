@@ -9,9 +9,8 @@ public class ContaTerminal {
         String nomeCliente;
         double saldo;
 
-        Scanner input = new Scanner(System.in); // Instancia a classe Scanner para caapturar as entradas no terminal
-        input.useLocale(Locale.US); // Define o tipo de input com base no padrão do local
-
+        Scanner input = new Scanner(System.in).useLocale(Locale.US); // Instancia a classe Scanner para caapturar as entradas no terminal
+        
         System.out.println("Digite o número da sua conta: ");
         numero = input.nextInt();
         input.nextLine(); // Limpeza do terminal para não capturar a quebra de linha no próximo input
